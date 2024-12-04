@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Quiz Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Quiz Game</h1>
+      <div id="question">What is the capital of France?</div>
+      <div class="options">
+        <button class="option" onclick="checkAnswer(this)" data-correct="false">
+          Berlin
+        </button>
+        <button class="option" onclick="checkAnswer(this)" data-correct="true">
+          Paris
+        </button>
+        <button class="option" onclick="checkAnswer(this)" data-correct="false">
+          Madrid
+        </button>
+        <button class="option" onclick="checkAnswer(this)" data-correct="false">
+          Rome
+        </button>
+      </div>
+      <div id="feedback"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
